@@ -1,0 +1,202 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75); /* semi-transparent black */
+  color: white;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-btn {
+  background: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 100px 20px 150px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero input {
+  padding: 12px;
+  width: 60%;
+  max-width: 500px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Featured stories styles */
+.featured-stories {
+  padding: 40px 20px 80px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.featured-stories .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-stories h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Story grid */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+/* Story card */
+.story-card {
+  background-color: #222; /* slightly lighter dark to stand out */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.story-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(30, 144, 255, 0.7); /* subtle blue glow */
+}
+
+.story-cover {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.story-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover .story-cover img {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #1e90ff; /* blue badge background */
+  color: white;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.badge.new {
+  background-color: #007bff;
+}
+
+.badge.best-selling {
+  background-color: #0056b3;
+}
+
+/* Story info */
+.story-info {
+  padding: 16px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+
+.stats {
+  display: flex;
+  gap: 18px;
+  font-size: 0.85rem;
+  color: #eee;
+}
+
+.stats i {
+  margin-right: 6px;
+  color: #1e90ff; /* blue icons */
+}
+
+/* Call to action section */
+.cta-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #106fcc;
+}
