@@ -1,4 +1,4 @@
- /* Global Styles */
+/* Global Styles */
 :root {
     --primary-color: #11b4fafc;
     --secondary-color: #010a0ee9;
@@ -56,9 +56,20 @@ a {
     margin-right: 10px;
 }
 
+.btn-login:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
 .btn-signup {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     color: white;
+}
+
+.btn-signup:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Header Styles */
@@ -80,7 +91,7 @@ a {
 .logo a {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(black);
 }
 
 .main-nav ul {
@@ -180,7 +191,7 @@ a {
     position: relative;
     height: 180px;
     overflow: hidden;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .story-cover img {
