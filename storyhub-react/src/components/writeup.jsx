@@ -33,7 +33,7 @@ const WriteUp = () => {
 
       <section className="write-section">
         <div className="container">
-          <form className="write-form">
+          <form className="write-form" onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="title">Story Title</label>
             <input type="text" id="title" name="title" placeholder="Enter your story title" required />
 
@@ -51,17 +51,17 @@ const WriteUp = () => {
             <div className="footer-column">
               <h3>StoryHub</h3>
               <ul>
-                <li><Link to="#">About Us</Link></li>
-                <li><Link to="#">Careers</Link></li>
-                <li><Link to="#">Press</Link></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
               </ul>
             </div>
             <div className="footer-column">
               <h3>Legal</h3>
               <ul>
-                <li><Link to="#">Terms of Service</Link></li>
-                <li><Link to="#">Privacy Policy</Link></li>
-                <li><Link to="#">Copyright</Link></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Copyright</a></li>
               </ul>
             </div>
             <div className="footer-column">

@@ -7,7 +7,7 @@ const Login = () => {
     <div className="login-page">
       <div className="login-container">
         <h2>Welcome Back</h2>
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <input type="text" placeholder="Username or Email" required />
           <input type="password" placeholder="Password" required />
           <button type="submit">Log In</button>

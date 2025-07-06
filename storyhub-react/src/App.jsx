@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Landing from './components/Landing';
-import Signup from './components/Signup';
-import Community from './components/Community';
-import WriteUp from './components/WriteUp';
-import Browse from './components/Browse';
-import Login from './components/Login'; // ✅ Make sure this import is here
+import Landing from './components/landing';
+import Signup from './components/signup';
+import Community from './components/community';
+import Writeup from './components/writeup';
+import Browse from './components/browse';
+import Login from './components/login';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Route path="/" element={<Landing />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/community" element={<Community />} />
-      <Route path="/writeup" element={<WriteUp />} />
+      <Route path="/writeup" element={<Writeup />} />
       <Route path="/browse" element={<Browse />} />
-      <Route path="/login" element={<Login />} /> {/* ✅ Add this line */}
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }
