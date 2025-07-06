@@ -1,20 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Landing.css'; // Make sure this file exists
+import './landing.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const Landing = () => {
   return (
     <div>
-      <header>
-        <div className="logo">StoryHub</div>
-        <nav>
-          <Link to="/browse">Browse</Link>
-          <Link to="/community">Community</Link>
-          <Link to="/writeup">Write</Link>
-          <Link to="/login">Log In</Link>
-          <Link to="/signup" className="signup-btn">Sign Up</Link>
-        </nav>
-      </header>
+      <Header />
 
       <section className="hero">
         <h1>Discover Amazing Stories</h1>
@@ -93,6 +86,8 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
