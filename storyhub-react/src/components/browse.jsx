@@ -2,6 +2,57 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './browse.css';
 
+const stories = [
+  {
+    title: 'Dark Realms',
+    author: 'L.J. Rivers',
+    img: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500',
+    views: '15.7K',
+    likes: '1.2K',
+    badge: 'Popular',
+  },
+  {
+    title: 'Garden',
+    author: 'Adeline Palmerstone',
+    img: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500',
+    views: '45.2K',
+    likes: '3.1K',
+    badge: 'New',
+  },
+  {
+    title: 'Winds of Time',
+    author: 'Theo Anders',
+    img: 'https://images.unsplash.com/photo-1520974735194-97b923c1e8c0?w=500',
+    views: '22.4K',
+    likes: '1.9K',
+    badge: 'Classic',
+  },
+  {
+    title: 'Silent Horizon',
+    author: 'Marcia Lane',
+    img: 'https://images.unsplash.com/photo-1544717305-2782549b5136?w=500',
+    views: '31.6K',
+    likes: '2.4K',
+    badge: 'Award-Winning',
+  },
+  {
+    title: 'Crimson Code',
+    author: 'Devlin Black',
+    img: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500',
+    views: '38.9K',
+    likes: '2.7K',
+    badge: 'Trending',
+  },
+  {
+    title: 'The Mirror\'s Secret',
+    author: 'Fiona Grey',
+    img: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500',
+    views: '26.4K',
+    likes: '2.2K',
+    badge: 'Editor\'s Pick',
+  }
+];
+
 const Browse = () => {
   return (
     <>
@@ -39,25 +90,22 @@ const Browse = () => {
         <div className="container">
           <h2>Featured Stories</h2>
           <div className="story-grid">
-            {/* Each story card can be extracted into a reusable component later */}
-            {/* Add your story cards here (copied directly from HTML) */}
-            {/* START OF ONE CARD */}
-            <div className="story-card">
-              <div className="story-cover">
-                <img src="https://i.postimg.cc/J49m83pK/image.png" alt="Story Cover" />
-                <span className="badge">Trending</span>
-              </div>
-              <div className="story-info">
-                <h3>Garden</h3>
-                <p className="author">By Adeline Palmerstone</p>
-                <div className="stats">
-                  <span><i className="fas fa-eye"></i> 45.2K</span>
-                  <span><i className="fas fa-heart"></i> 3.1K</span>
+            {stories.map((story, index) => (
+              <div className="story-card" key={index}>
+                <div className="story-cover">
+                  <img src={story.img} alt="Story Cover" />
+                  <span className="badge">{story.badge}</span>
+                </div>
+                <div className="story-info">
+                  <h3>{story.title}</h3>
+                  <p className="author">By {story.author}</p>
+                  <div className="stats">
+                    <span><i className="fas fa-eye"></i> {story.views}</span>
+                    <span><i className="fas fa-heart"></i> {story.likes}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* Copy and paste remaining cards here as-is from your HTML */}
-            {/* END OF ONE CARD */}
+            ))}
           </div>
 
           <div className="cta-section">
@@ -96,7 +144,7 @@ const Browse = () => {
             </div>
           </div>
           <div className="copyright">
-            <p>&copy; 2025 StoryHub. All rights reserved.AANA</p>
+            <p>&copy; 2025 StoryHub. All rights reserved.</p>
           </div>
         </div>
       </footer>

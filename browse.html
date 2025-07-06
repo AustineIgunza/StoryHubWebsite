@@ -1,271 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StoryHub - Share Your Stories</title>
-    <link rel="stylesheet" href="browse.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse | StoryHub</title>
+  <link rel="stylesheet" href="browse.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <a href="landing.html">StoryHub</a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="browse.html">Browse</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="writeup.html">Write</a></li>
-                </ul>
-            </nav>
-            <div class="auth-buttons">
-                <a href="login.html" class="btn btn-login">Log In</a>
-                <a href="signup.html" class="btn btn-signup">Sign Up</a>
-            </div>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Discover Amazing Stories</h1>
-            <p>Read, write, and connect with a community of passionate readers and writers.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for stories, authors, or genres...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-    </section>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo"><a href="landing.html">StoryHub</a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="browse.html" class="active">Browse</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="writeup.html">Write</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-login">Log In</a>
+        <a href="signup.html" class="btn btn-signup">Sign Up</a>
+      </div>
+    </div>
+  </header>
 
-    <section class="featured-stories">
-        <div class="container">
-            <h2>Featured Stories</h2>
-            <div class="story-grid">
-                <!-- Story Card 1 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/J49m83pK/image.png" alt="Story Cover">
-                        <span class="badge">Trending</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>Garden</h3>
-                        <p class="author">By Adeline Palmerstone</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 45.2K</span>
-                            <span><i class="fas fa-heart"></i> 3.1K</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Story Card 2 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/5NRwWWPc/image.png" alt="Story Cover">
-                        <span class="badge new">New</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>Haunting Adeline</h3>
-                        <p class="author">By H.D Carlton</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 12.7K</span>
-                            <span><i class="fas fa-heart"></i> 892</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 3 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/DZ8nFC3j/image.png" alt="Story Cover">
-                        <span class="badge">Trending</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>The Great Gatsby</h3>
-                        <p class="author">By F.Scott.FitzGerald</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 45.2K</span>
-                            <span><i class="fas fa-heart"></i> 3.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 4 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/Qx74Pxqd/Whats-App-Image-2025-06-01-at-22-02-01-1a09e884.jpg" alt="Story Cover">
-                        <span class="badge">Trending</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>The Echoes of War</h3>
-                        <p class="author">By Butere Girls High School</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 45.2K</span>
-                            <span><i class="fas fa-heart"></i> 3.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 5 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/zfHVw6r6/Whats-App-Image-2025-06-01-at-22-10-00-3790c459.jpg" alt="Story Cover">
-                        <span class="badge">Best selling</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>The A Court Of Silver Flames</h3>
-                        <p class="author">By Sarah J. Maas</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 45.2K</span>
-                            <span><i class="fas fa-heart"></i> 3.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 6 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/pT9vcGsy/Whats-App-Image-2025-06-09-at-09-33-05-d173118e.jpg" alt="Story Cover">
-                        <span class="badge">New</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>King Of Wrath</h3>
-                        <p class="author">By Ana Huang</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 3.2K</span>
-                            <span><i class="fas fa-heart"></i> 1.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 7 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/HxmKX6Ff/Whats-App-Image-2025-06-09-at-09-42-14-58c7e830.jpg" alt="Story Cover">
-                        <span class="badge">New</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>The Mountain Is You</h3>
-                        <p class="author">By Brianna Wiest</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 30.2K</span>
-                            <span><i class="fas fa-heart"></i> 20.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 8 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/DyRx1CXB/Whats-App-Image-2025-06-09-at-09-40-18-431264b0.jpg" alt="Story Cover">
-                        <span class="badge">Best selling</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>The Psychology Of Money</h3>
-                        <p class="author">By Morgan Housel</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 120.2K</span>
-                            <span><i class="fas fa-heart"></i> 50.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 9 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/fWCyPLj9/image.png" alt="Story Cover">
-                        <span class="badge">Recommended</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>Puzzles</h3>
-                        <p class="author">By Harper Russo</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 120.2K</span>
-                            <span><i class="fas fa-heart"></i> 50.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 10 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/3rLkfNYc/image.png" alt="Story Cover">
-                        <span class="badge">New</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>How To Build Your Self Esteem</h3>
-                        <p class="author">By Olivia Watson</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 120.2K</span>
-                            <span><i class="fas fa-heart"></i> 50.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 11 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/PJmTjS0y/image.png" alt="Story Cover">
-                        <span class="badge">New</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>Mind And Perspective</h3>
-                        <p class="author">By Rosa Maria Aguado</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 120.2K</span>
-                            <span><i class="fas fa-heart"></i> 50.1K</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Card 12 -->
-                <div class="story-card">
-                    <div class="story-cover">
-                        <img src="https://i.postimg.cc/5NBL71KY/image.png" alt="Story Cover">
-                        <span class="badge">New</span>
-                    </div>
-                    <div class="story-info">
-                        <h3>Daily Food Recipes</h3>
-                        <p class="author">By Juliana Silva</p>
-                        <div class="stats">
-                            <span><i class="fas fa-eye"></i> 10.2K</span>
-                            <span><i class="fas fa-heart"></i> 4.1K</span>
-                        </div>
-                    </div>
-                </div>
+  <section class="hero">
+    <div class="container">
+      <h1>Discover Amazing Stories</h1>
+      <p>Read, write, and connect with a community of passionate readers and writers.</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for stories, authors, or genres..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
 
-                <!-- Add more story cards as needed -->
+  <section class="featured-stories">
+    <div class="container">
+      <h2>Featured Stories</h2>
+      <div class="story-grid">
+        <!-- Story 1 -->
+        <div class="story-card">
+          <div class="story-cover">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500" alt="Book cover" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="story-info">
+            <h3>Dark Realms</h3>
+            <p class="author">By L.J. Rivers</p>
+            <div class="stats">
+              <span><i class="fas fa-eye"></i> 15.7K</span>
+              <span><i class="fas fa-heart"></i> 1.2K</span>
             </div>
-            
-            <div class="cta-section">
-                <h2>Ready to share your story?</h2>
-                <a href="writeup.html" class="btn btn-primary">Start Writing Now</a>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>StoryHub</h3>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Copyright</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    </ul>
-                </div>
+        <!-- Story 2 -->
+        <div class="story-card">
+          <div class="story-cover">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500" alt="Book cover" />
+            <span class="badge">New</span>
+          </div>
+          <div class="story-info">
+            <h3>Garden</h3>
+            <p class="author">By Adeline Palmerstone</p>
+            <div class="stats">
+              <span><i class="fas fa-eye"></i> 45.2K</span>
+              <span><i class="fas fa-heart"></i> 3.1K</span>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 StoryHub. All rights reserved.AANA</p>
-            </div>
+          </div>
         </div>
-    </footer>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+          <div class="story-cover">
+            <img src="https://images.unsplash.com/photo-1520974735194-97b923c1e8c0?w=500" alt="Book cover" />
+            <span class="badge">Classic</span>
+          </div>
+          <div class="story-info">
+            <h3>Winds of Time</h3>
+            <p class="author">By Theo Anders</p>
+            <div class="stats">
+              <span><i class="fas fa-eye"></i> 22.4K</span>
+              <span><i class="fas fa-heart"></i> 1.9K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="story-card">
+          <div class="story-cover">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=500" alt="Book cover" />
+            <span class="badge">Award-Winning</span>
+          </div>
+          <div class="story-info">
+            <h3>Silent Horizon</h3>
+            <p class="author">By Marcia Lane</p>
+            <div class="stats">
+              <span><i class="fas fa-eye"></i> 31.6K</span>
+              <span><i class="fas fa-heart"></i> 2.4K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 5 -->
+        <div class="story-card">
+          <div class="story-cover">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500" alt="Book cover" />
+            <span class="badge">Trending</span>
+          </div>
+          <div class="story-info">
+            <h3>Crimson Code</h3>
+            <p class="author">By Devlin Black</p>
+            <div class="stats">
+              <span><i class="fas fa-eye"></i> 38.9K</span>
+              <span><i class="fas fa-heart"></i> 2.7K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 6 -->
+        <div class="story-card">
+          <div class="story-cover">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500" alt="Book cover" />
+            <span class="badge">Editor's Pick</span>
+          </div>
+          <div class="story-info">
+            <h3>The Mirror's Secret</h3>
+            <p class="author">By Fiona Grey</p>
+            <div class="stats">
+              <span><i class="fas fa-eye"></i> 26.4K</span>
+              <span><i class="fas fa-heart"></i> 2.2K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h2>Ready to share your story?</h2>
+        <a href="writeup.html" class="btn btn-primary">Start Writing Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <!-- Footer columns -->
+      <div class="footer-links">
+        <div class="footer-column"><h3>StoryHub</h3><ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul></div>
+        <div class="footer-column"><h3>Legal</h3><ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Copyright</a></li></ul></div>
+        <div class="footer-column"><h3>Connect</h3><ul><li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li><li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li><li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li></ul></div>
+      </div>
+      <div class="copyright">&copy; 2025 StoryHub. All rights reserved.</div>
+    </div>
+  </footer>
+
 </body>
 </html>
