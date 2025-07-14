@@ -204,6 +204,15 @@ a {
 .story-card:hover .story-cover img {
     transform: scale(1.05);
 }
+.like-btn {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.like-btn.liked i {
+  color: rgba(255, 0, 0, 0.71);
+}
+
 
 .badge {
     position: absolute;
